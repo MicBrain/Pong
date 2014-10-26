@@ -1,0 +1,19 @@
+{
+    "mysql": { // or "pg" or "sqlite"
+        "database": "c9",
+        "user": "mahnerak",
+        "password": "",
+        "host": "0.0.0.0"
+        // "schema": "schema-name"
+    },
+    "server": {
+        "port": 3000
+    },
+    "app": {
+        "layouts": true,
+        "themes": true,
+        "languages": true,
+        "root": "/admin",
+        "upload": "/upload/folder"
+    }
+}

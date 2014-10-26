@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Pong!</title>
+    <link href='/static/pc/stylesheet.css' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='/static/styles.css' rel='stylesheet' type='text/css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+  </head>
+
+  <body>
+
+    <div class="wrapper">
+        <div class="left">
+            <div class="h1">
+                <h1>pong</h1>
+                <small class="dark">tracking platform</small>
+            </div>
+        </div>
+        <div class="right">
+            <form class="form-set-check" role="form" method="POST">
+                <ul>
+                    <% for(var i = 0; i < checks.length; ++i) { %>
+                        <li><a href="/checks/<%- checks[i].id %>/"><%- checks[i].title %></a></li><hr>
+                    <% } %>
+                    <li><input class="form-control" type="submit" value="Create New Check"></li>
+                </ul>
+            </form>
+        </div>
+      
+    </div> <!-- /container -->
+
+
+  </body>
+</html>

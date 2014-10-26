@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Pong!</title>
+    <link href='/static/pc/stylesheet.css' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href='/static/styles.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.1.3/ace.js"></script>
+    <script>
+        $(function(){
+            var editor = ace.edit("condition");
+            editor.getSession().setMode("ace/mode/javascript");
+            editor.setTheme("ace/theme/solarized_light");
+            $('#condition-container').resizable();
+            $(".form-set-check").on("submit", function(){
+               $("textarea[name=condition]").val(editor.getSession().getValue()); 
+            });
+            $("#condition-templates").on('change', function(){
+               editor.getSession().setValue($(this).val());
+            });
+        });
+    </script>
+  </head>
+
+  <body>
+
+    <div class="wrapper" style="height: 400px;margin-top:-200px;width:1000px;margin-left:-500px">
+        <div class="left" style="width:30%;">
+            <div class="h1">
+                <h1>pong</h1>
+                <small class="dark">tracking platform</small>
+            </div>
+        </div>
+        <div class="right" style="width:70%;left:30%">
+            <form class="form-set-check" role="form" method="POST">
+                <input name="title" type="text" class="form-control" placeholder="Service title" value="<%- title %>">
+                <br>
+                <input name="resource" type="text" class="form-control" placeholder="Your address (eg. www.mahnerak.com)" required autofocus value="<%- resource %>">
+                <br>
+                <select id="condition-templates" class="form-control flat-bottom">
+                    <option disabled value="(function(){&#10;    // return your status&#10;    // avaliable vars - err, response, body&#10;})();" selected="selected">Pick condition from templates</option>
+                    <option value="(function(){&#10;    return err ? 'Down' : 'Up';&#10;})();">HTTP Response Success (Up/Down)</option>
+                    <option value="(function(){&#10;    return body.indexOf('Test') ? 'Body contains test' : 'Body does not contain test';&#10;})();">Page contains word &quot;Test&quot;</option>
+                </select>
+                
+                <div class="form-control flat-top" id="condition-container"><div id="condition"><%- condition %></div></div>
+                <textarea name="condition" style="display:none"></textarea>
+                <br>
+                <input type="radio" name="active" <%- active ? 'checked' : '' %> value="1" id="active-true"> <label for="active-true">Enabled</label> 
+                <input type="radio" name="active" <%- !active ? 'checked' : '' %> value="0" id="active-false"> <label for="active-false">Disabled</label> 
+                <br>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" value="Set">
+            </form>
+        </div>
+      
+    </div> <!-- /container -->
+
+
+  </body>
+</html>
