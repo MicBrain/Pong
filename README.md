@@ -3,7 +3,7 @@
 
 #### Content
 
-1. #Problem
+1. Problem
 2. Suggested Solution
 3. Idea
 4. Pong
@@ -40,7 +40,7 @@ Another important goal of this project is to inform about the executed updates i
 
 #### Advantages of this tool
 
-Here we discuss some instances where Pong can be very useful.
+Some instances where Pong can be very useful.
 
 1. Finding system anomalies - The main task of Pong is to help the administrator find bugs that are difficult to find manually. The examples described in Description of the Software Tool provide more detail about the different types of monitoring tasks Pong can handle.
 
