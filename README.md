@@ -4,7 +4,7 @@
 #### Content
 
 1. Problem 
-2. Suggested Solution
+2. Suggested Solution 
 3. Idea
 4. Pong
 5. Description of the Software Tool
