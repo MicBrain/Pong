@@ -9,7 +9,7 @@
 4. Pong 
 5. Description of the Software Tool 
 6. Advantages of this tool 
-7. Like it/Hate it 
+7. Like it/Hate it  
 
 
 #### Problem
