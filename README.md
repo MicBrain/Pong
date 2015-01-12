@@ -6,7 +6,7 @@
 1. Problem 
 2. Suggested Solution 
 3. Idea 
-4. Pong
+4. Pong 
 5. Description of the Software Tool
 6. Advantages of this tool
 7. Like it/Hate it 
