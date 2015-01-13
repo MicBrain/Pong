@@ -12,7 +12,7 @@
 7. Like it/Hate it  
 
 
-#### Problem
+#### Problem 
 
 Cloud security, server protection, and vulnerability detection are some of the most important tasks for every system and/or security administrator. There are a number of security issues and concerns associated with cloud computing, servers, and websites. There is always some chance that small bugs or typos in a big program will cause system anomalies, which can result in undesirable side effects. Trying to regularly monitor systems work can be a very time-consuming and technically challenging task. Moreover, it is unreasonable for administrators to manually check system activity and detect bugs. Trying to overcome that difficulty in a standard way creates different types of technical challenges, which can be very overwhelming. What if there was a software tool which could complete all those tasks automatically and inform the administrator or even the user of the software system if there was some kind of anomaly?
 
