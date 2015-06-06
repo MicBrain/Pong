@@ -52,4 +52,3 @@ Some instances where Pong can be very useful.
 #### Like it/Hate it
 
 For comments and/or suggestions please contact Rafayel Mkrtchyan (rafamian@berkeley.edu).
-
