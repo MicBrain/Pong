@@ -53,4 +53,3 @@ Some instances where Pong can be very useful.
 
 For comments and/or suggestions please contact Rafayel Mkrtchyan (rafamian@berkeley.edu).
 
-
